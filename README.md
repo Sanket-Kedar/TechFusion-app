@@ -244,8 +244,8 @@ git push origin main
 **📚 Read Full Guide**: See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
 
 ### Live Demo URLs
-- Frontend: `https://techfusion-app.vercel.app/`
-- Backend: `https://techfusion-app.onrender.com/`
+- Frontend: https://techfusion-app.vercel.app/
+- Backend: https://techfusion-app.onrender.com/
 
 ### Free Tier Limitations
 - **Render**: Backend sleeps after 15 min inactivity (30-50s wake time)
