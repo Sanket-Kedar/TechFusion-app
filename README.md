@@ -216,6 +216,42 @@ TechFusion-app/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 
+## 🚀 Deployment
+
+This app can be deployed to free cloud hosting platforms:
+
+### Quick Deployment (~30 minutes)
+1. **Database**: MongoDB Atlas (Free M0 cluster)
+2. **Backend**: Render (Free tier)
+3. **Frontend**: Vercel (Free tier)
+
+### Deployment Files Included
+- `render.yaml` - Render configuration
+- `vercel.json` - Vercel configuration
+- `DEPLOYMENT.md` - Detailed deployment guide
+- `DEPLOY_CHECKLIST.md` - Quick deployment checklist
+
+### Quick Start
+```bash
+# 1. Push to GitHub
+git push origin main
+
+# 2. Follow DEPLOY_CHECKLIST.md for step-by-step instructions
+
+# 3. Your app will be live in ~30 minutes!
+```
+
+**📚 Read Full Guide**: See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
+### Live Demo URLs
+- Frontend: `https://your-app.vercel.app`
+- Backend: `https://your-app.onrender.com`
+
+### Free Tier Limitations
+- **Render**: Backend sleeps after 15 min inactivity (30-50s wake time)
+- **Vercel**: Unlimited bandwidth for hobby projects
+- **MongoDB Atlas**: 512MB storage
+
 ## Contributing
 
 1. Fork the repository
