@@ -33,17 +33,31 @@ app.use(cors({
   credentials: true
 }));
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'TechFusion Backend API',
+    status: 'running',
+    endpoints: {
+      health: '/api/health',
+      products: '/api/products',
+      auth: '/api/auth',
+      orders: '/api/orders'
+    }
+  });
+});
+
+// Health check
+app.get('/api/health', (req, res) => {
+  res.json({ message: 'TechFusion API is running' });
+});
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/upload', uploadRoutes);
-
-// Health check
-app.get('/api/health', (req, res) => {
-  res.json({ message: 'TechFusion API is running' });
-});
 
 // Error handling middleware
 app.use(notFound);
