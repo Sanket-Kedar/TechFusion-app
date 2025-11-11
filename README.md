@@ -263,7 +263,5 @@ git push origin main
 
 This project is licensed under the MIT License.
 
-## Support
 
-For support, email support@techfusion.com or open an issue in the repository.
 
