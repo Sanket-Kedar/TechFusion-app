@@ -23,12 +23,14 @@ const AdminDashboard = () => {
         orderService.getAllOrders()
       ]);
 
-      const revenue = ordersData.reduce((sum, order) => sum + order.totalPrice, 0);
+      // Exclude cancelled orders from revenue calculation
+      const activeOrders = ordersData.filter(order => order.status !== 'cancelled');
+      const revenue = activeOrders.reduce((sum, order) => sum + order.totalPrice, 0);
 
       setStats({
         totalProducts: productsData.total,
-        totalOrders: ordersData.length,
-        totalRevenue: revenue,
+        totalOrders: ordersData.length, // Total includes all orders
+        totalRevenue: revenue, // Revenue excludes cancelled orders
         recentOrders: ordersData.slice(0, 5)
       });
     } catch (error) {
