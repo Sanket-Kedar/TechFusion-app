@@ -246,7 +246,6 @@ git push origin main
 ### Live Demo URLs
 - Frontend: https://techfusion-app.vercel.app/
 - Backend: https://techfusion-app.onrender.com/
-
 ### Free Tier Limitations
 - **Render**: Backend sleeps after 15 min inactivity (30-50s wake time)
 - **Vercel**: Unlimited bandwidth for hobby projects
@@ -264,7 +263,5 @@ git push origin main
 
 This project is licensed under the MIT License.
 
-## Support
 
-For support, email support@techfusion.com or open an issue in the repository.
 
